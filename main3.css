@@ -1,0 +1,161 @@
+.control {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 90px;
+    background-color: #170f23;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    border-top: solid 0.5px #282331;
+}
+.control-left {
+    display: flex;
+    color: #fff;
+    align-items: center;
+    flex-basis: 30%;
+}
+.cd {
+    position: relative;
+    width: 70px;
+    height: 70px;
+}
+
+.cd-img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cd-info {
+    margin-left: 24px;
+}
+
+.cd-name {
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+    max-width: 100px;
+}
+
+/*khung giua*/
+.control-center {
+    flex-basis: 40%;
+}
+.btn i {
+    color: #dadada;
+    font-size: 24px;
+    padding: 8px;
+    cursor: pointer;
+    display: inline-block;
+}
+.btn-control-list .btn {
+    margin-left: 12px;
+}
+.btn-control-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-random.active i{
+    color: var(--color-purple)!important;
+}
+
+.btn-repeat.active i{
+    color: var(--color-purple)!important;
+}
+
+.btn-hover:hover {
+    background-color: var( --alpha-bg);
+    border-radius: 30px;
+    cursor: pointer;
+}
+.is-playing .icon-pause {
+    display: inline-block !important;
+}
+
+.is-playing .icon-play {
+    display: none !important;
+}
+
+.icon-play:hover, .icon-pause:hover {
+    color: var(--color-purple);
+}
+
+.icon-pause {
+    display: none !important;
+}
+
+.icon-play, .icon-pause {
+    font-size: 35px!important;
+}
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    position: relative;
+}
+
+.progress-line {
+    position: relative;
+    width: 100%;
+    height: 1px;
+    margin: 0 10px;
+}
+.time-left, .time-right {
+    color: var(--text-secondary);
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.line-first {
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    background: #595560;
+}
+
+.line-current {
+    width: 0.;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 4px;
+    background: #fff;
+    z-index: 2;
+}
+
+.circle {
+    width: 12px; 
+    height: 12px;
+    border-radius: 50%;
+    background-color:#fff;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: 3;
+    transform: translateY(-50%);
+    display: none;
+}
+.control-right {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 20%;
+    color: #fff;
+    position: relative;
+    left: 5%;
+}
+.control-right i {
+    font-size: 18px;
+    padding: 8px 8px;
+    padding-left: 5%;
+}
